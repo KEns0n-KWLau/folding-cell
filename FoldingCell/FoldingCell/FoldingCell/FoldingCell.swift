@@ -217,9 +217,13 @@ open class FoldingCell: UITableViewCell {
     let itemHeight = (contSize.height - 2 * forgSize.height) / CGFloat(itemCount - 2)
     
     if itemCount == 2 {
-      // decrease containerView height or increase itemCount
-      assert(contSize.height - 2 * forgSize.height == 0, "contanerView.height too high")
-    }
+            // decrease containerView height or increase itemCount
+            assert(contSize.height - 2 * forgSize.height == 0, "contanerView.height too high")
+        }
+        else{
+            // decrease containerView height or increase itemCount
+            assert(contSize.height - 2 * forgSize.height >= itemHeight, "contanerView.height too high")
+        }
     // decrease containerView height or increase itemCount
     assert(contSize.height - 2 * forgSize.height >= itemHeight, "contanerView.height too high")
     
@@ -310,7 +314,7 @@ open class FoldingCell: UITableViewCell {
   func durationSequence(_ type: AnimationType)-> [TimeInterval] {
     var durations  = [TimeInterval]()
     for index in 0..<itemCount-1 {
-      let duration = animationDuration(index, type: .open)
+      let duration = animationDuration(index, type: type)
       durations.append(TimeInterval(duration / 2.0))
       durations.append(TimeInterval(duration / 2.0))
     }
