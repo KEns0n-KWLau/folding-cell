@@ -18,6 +18,11 @@ We specialize in the designing and coding of custom UI for Mobile Apps and Websi
 
 
 The [iPhone mockup](https://store.ramotion.com/product/iphone-6-mockups?utm_source=gthb&utm_medium=special&utm_campaign=folding-cell) available [here](https://store.ramotion.com/product/iphone-6-mockups?utm_source=gthb&utm_medium=special&utm_campaign=folding-cell).
+
+## Try this UI control in action
+
+<a href="https://itunes.apple.com/app/apple-store/id1182360240?pt=550053&ct=gthb-folding-cell&mt=8" > <img src="https://github.com/Ramotion/navigation-stack/raw/master/Download_on_the_App_Store_Badge_US-UK_135x40.png" width="170" height="58"></a>
+
 ## Requirements
 
 - iOS 8.0+
@@ -28,11 +33,9 @@ The [iPhone mockup](https://store.ramotion.com/product/iphone-6-mockups?utm_sour
 Just add the FoldingCell.swift file to your project.
 
 or use [CocoaPods](https://cocoapods.org) with Podfile:
-``` ruby
-pod 'FoldingCell' '~> 1.0.0' swift 2.2
-pod 'FoldingCell' '~> 2.0.1' swift 3
 ```
-
+pod 'FoldingCell' '~> 2.0.3' 
+```
 or [Carthage](https://github.com/Carthage/Carthage) users can simply add Mantle to their `Cartfile`:
 ```
 github "Ramotion/folding-cell"
